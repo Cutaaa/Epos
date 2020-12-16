@@ -1,0 +1,422 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+button {
+	font-family: 'Poppins', sans-serif;
+}
+
+header {
+	display: flex;
+	width: 90%;
+	height: 10vh;
+	margin: auto;
+	align-items: center;
+}
+
+.logo-container,
+.nav-links,
+.cart {
+	display: flex;
+}
+
+.logo-container {
+	flex: 1;
+}
+.logo {
+	font-weight: 400;
+	margin: 5px;
+}
+nav {
+	flex: 2;
+}
+.nav-links {
+	justify-content: space-around;
+	list-style: none;
+}
+.nav-link {
+	color: #5f5f79;
+	font-size: 18px;
+	text-decoration: none;
+}
+.cart {
+	flex: 1;
+	justify-content: flex-end;
+}
+
+.presentation {
+	display: flex;
+	width: 90%;
+	margin: auto;
+	min-height: 80vh;
+	align-items: center;
+}
+.introduction {
+	flex: 1;
+}
+.intro-text h1 {
+	font-size: 44px;
+	font-weight: 500;
+	background: linear-gradient(to right, #494964, #6f6f89);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.intro-text p {
+	margin-top: 5px;
+	font-size: 22px;
+	color: #585772;
+}
+.cta {
+	padding: 50px 0px 0px 0px;
+}
+.cta-select {
+	border: 2px solid #c36cbb;
+	background: transparent;
+	color: #c36cbb;
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+	font-size: 16px;
+}
+.cta-add {
+	background: #c36cbb;
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+	font-size: 16px;
+	border: none;
+	color: white;
+	margin: 30px 0px 0px 30px;
+}
+
+.cover {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	height: 60vh;
+}
+.cover img {
+	height: 100%;
+	filter: drop-shadow(0px 5px 3px black);
+	animation: drop 1.5s ease;
+}
+
+.big-circle {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	z-index: -1;
+	opacity: 0.5;
+	height: 80%;
+}
+.medium-circle {
+	position: absolute;
+	top: 30%;
+	right: 30%;
+	z-index: -1;
+	height: 60%;
+	opacity: 0.4;
+}
+.small-circle {
+	position: absolute;
+	bottom: 0%;
+	left: 20%;
+	z-index: -1;
+}
+
+.laptop-select {
+	width: 15%;
+	display: flex;
+	justify-content: space-around;
+	position: absolute;
+	right: 20%;
+}
+
+.about-odeljak{
+	margin-top: 140px;
+}
+
+#container-1{
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	margin: auto;
+	justify-content: space-between;
+}
+
+.box-1{
+	flex: 2;
+	order: 2;
+	border: 3px solid #494964;
+	margin: 0 35px;
+	padding: 20px;
+}
+
+.box-2{
+	flex: 1;
+	order: 3;
+	border-top: 3px solid #c36cbb;
+	padding: 20px;
+}
+
+.box-3{
+	flex: 1;
+	order: 1;
+	border-top: 3px solid #c36cbb;
+	padding: 20px;
+}
+
+.prikaz-proizvoda{
+	display: flex;
+	margin:auto;
+	margin-top: 75px;
+	width: 90%;
+	flex-wrap: wrap;
+	overflow: hidden;
+}
+
+.kutija{
+	margin: 75px 25px 50px 25px;
+	flex-basis: 27%;
+	border-top: 3px solid #494964;
+	justify-content: space-between;
+}
+
+.kutija h3{
+	text-align: center;
+	margin-bottom: 20px;
+	color: #c36cbb;
+}
+
+.prikaz-proizvoda .kutija img{
+	width: 200px;
+	margin-bottom: 25px;
+	margin-left: 150px;
+}
+
+#futer{
+	margin-top: 75px;
+	background-color: #c36cbb;
+	display: flex;
+	height: 15vh;
+	background: #000000;
+	opacity:0.4;
+	
+}
+
+.prvideo-futer{
+	flex: 1;
+	order: 1;
+	padding: 30px 150px;
+	color: white;
+}
+
+.drugideo-futer{
+	flex: 1;
+	order: 2;
+	padding: 25px 150px;
+	color: white;
+}
+
+.btn-footer{
+	padding: 15px;
+	background-color: rebeccapurple;
+	color: white;
+	border-radius: 15px;
+}
+
+/*GALLERY*/
+
+/* The grid: Four equal columns that floats next to each other */
+
+.row{
+	margin:auto;
+	margin-top: 75px;
+	margin-left: 90px;
+	margin-right: 90px;
+	background-color: violet;
+}
+.column {
+	float: left;
+	width: 25%;
+	padding: 10px;
+  }
+  
+  /* Style the images inside the grid */
+  .column img {
+	opacity: 0.8;
+	cursor: pointer;
+  }
+  
+  .column img:hover {
+	opacity: 1;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+  /* The expanding image container (positioning is needed to position the close button and the text) */
+  .container {
+	position: relative;
+	display: none;
+  }
+  
+  /* Expanding image text */
+  #imgtext {
+	position: absolute;
+	bottom: 15px;
+	left: 15px;
+	color: white;
+	font-size: 20px;
+  }
+  
+  /* Closable button inside the image */
+  .closebtn {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	color: white;
+	font-size: 35px;
+	cursor: pointer;
+  }
+
+  
+  #trenutni-datum{
+	width: 90%;
+	text-align: center;
+	margin: auto;
+	margin-top: 75px;
+	padding: 35px;
+	background-color: #c36cbb;
+
+  }
+
+  /*Forma*/
+
+
+  .kont{
+	box-sizing: border-box;
+	width: 90%;
+	margin: auto;
+  }
+
+  .container-kontakt{
+	border-radius: 5px;
+	background-color: #5f5f79;
+	padding: 20px;
+  }
+
+  input[type=text], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+  }
+  
+  input[type=submit] {
+	background-color: #5f5f79;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+	background-color: #c36cbb;
+  }
+
+
+@keyframes drop {
+	0% {
+		opacity: 0;
+		transform: translateY(-80px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.presentation {
+		flex-direction: column;
+	}
+	.introduction {
+		margin-top: 5vh;
+		text-align: center;
+	}
+	.intro-text h1 {
+		font-size: 30px;
+	}
+	.intro-text p {
+		font-size: 18px;
+	}
+	.cta {
+		padding: 10px 0px 0px 0px;
+	}
+	.laptop-select {
+		bottom: 5%;
+		right: 50%;
+		width: 50%;
+		transform: translate(50%, 5%);
+	}
+	.cover img {
+		height: 80%;
+	}
+	.small-circle,
+	.medium-circle,
+	.big-circle {
+		opacity: 0.2;
+	}
+
+	.about-odeljak{
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+
+	#futer{
+		flex-direction: column;
+		background-color: violet;
+	}
+
+	.drugideo-futer{
+		display: none;
+	}
+}
+
+@media(min-width: 768px){
+	.header{
+		display: flex;
+	}
+
+	.row{
+		display: flex;
+	}
+
+	.column{
+		flex-direction: column;
+	}
+
+	.prikaz-proizvoda{
+		display: flex;
+	}
+
+	.prikaz-proizvoda .kutija{
+		flex-direction: column;
+		margin-left: 55px;
+	}
+}
